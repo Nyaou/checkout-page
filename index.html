@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/386bf11b23.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Checkout Page</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Checkout</h1>
+  </header>
+  <main class="container-principal">
+    
+    <form class="formulario">
+
+      <!-- Seção de contato do formulário -->
+      <section class="contact">
+        <h2 class="titulo-form">Contact information</h2>
+        <div class="box-input">
+          <label for="email" class="label-input">E-mail</label>
+          <input type="email" name="email" placeholder="Enter your email..." class="input" id="input-email">
+        </div>
+        <div class="box-input">
+          <label for="phone" class="label-input">Phone</label>
+          <input type="number" name="phone" placeholder="Enter your phone..." class="input" id="input-phone">
+        </div>
+      </section>
+
+      <!-- Seção de envio do formulário -->
+      <section>
+        <h2 class="titulo-form">Shipping address</h2>
+        <div class="box-input">
+          <label for="name" class="label-input">Full name</label>
+          <input type="text" name="name" placeholder="Rodnye Cotton" class="input" id="input-name">
+        </div>
+        <div class="box-input">
+          <label for="address" class="label-input">Address</label>
+          <input type="text" name="address" placeholder="Your address..." class="input" id="input-address">
+        </div>
+        <div class="box-input">
+          <label for="city" class="label-input">City</label>
+          <input type="text" name="city" placeholder="Yout city..." class="input" id="input-city">
+        </div>
+        <div class="box-input2">
+          <div class="box-input custom">
+            <label for="country" class="label-input">Country</label>
+            <select name="country" class="input" id="input-country">
+              <option value="country" selected >Your country</option>
+              <option value="country1">country 1</option>
+              <option value="country2">country 2</option>
+              <option value="country3">country 3</option>
+            </select>
+          </div>
+          <div class="box-input custom m-left">
+            <label for="postal-code" class="label-input">Postal Code</label>
+            <input type="number" name="postal-code" placeholder="Your postal code..." class="input" id="input-postal">
+          </div>
+        </div>
+        <div class="box-input-custom">
+          <input type="checkbox" name="save" value="save-informations" id="checkbox-save">
+          <p class="paragrafo-informations">Save this information for next time</p>
+        </div>
+      </section>
+      <input type="submit" name="subtmit" value="continue" class="buton-submit" id="btn-submit">
+    </form>
+
+    <!-- Seção dos items a ser enviado e total -->
+    <section class="shipping">
+      <div class="box-shipping">
+        <img src="img/photo1.png" class="img">
+        <div class="desc-shipping">
+          <h4 class="desc-item">Vintage Backbag</h3>
+          <div class="desc-preco">
+            <span class="preco preco-atual">$54.99</span>
+            <span class="preco preco-antigo">$94.99</span>
+          </div>
+          <div class="desc-qtd">
+            <button id="btn-1-menos" class="desc-btn"><i class="fa-solid fa-minus"></i></button>
+            <span id="desc-qtd-1" class="qtd-valor">1</span>
+            <button id="btn-1-mais" class="desc-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-shipping">
+        <img src="img/photo2.png" class="img">
+        <div class="desc-shipping">
+          <h4 class="desc-item">Vintage Backbag</h3>
+          <div class="desc-preco">
+            <span class="preco preco-atual">$54.99</span>
+            <span class="preco preco-antigo">$94.99</span>
+          </div>
+          <div class="desc-qtd">
+            <button id="btn-2-menos" class="desc-btn"><i class="fa-solid fa-minus"></i></button>
+            <span id="desc-qtd-2" class="qtd-valor">1</span>
+            <button id="btn-2-mais" class="desc-btn"><i class="fa-solid fa-plus"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="total shipping-total">
+        <h3 class="desc-total">Shipping</h3>
+        <span class="total-preco">$19</span>
+      </div>
+      <div class="total ">
+        <h3 class="desc-total">Total</h3>
+        <span class="total-preco">$148.98</span>
+      </div>
+
+    </section>
+  </main>
+  <footer class="rodape">
+    <small>create by <a href="https://github.com/Nyaou" target="_blank">Nyaou</a> - <a href="https://devchallenges.io/" target="_blank">devChallenges.io</a></small>
+  </footer>
+
+  <script src="scripts/validacao.js"></script>
+</body>
+</html>
