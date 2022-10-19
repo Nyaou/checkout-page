@@ -32,9 +32,9 @@
 
 ## Overview
 
-![screenshot-desktop](screenshots/design-desktop.pgn)
-![screenshot-mobile](screenshots/design-mobile1.pgn)
-![screenshot-mobile](screenshots/design-mobile2.pgn)
+![screenshot-desktop](screenshots/design-desktop.png)
+![screenshot-mobile](screenshots/design-mobile1.png)
+![screenshot-mobile](screenshots/design-mobile2.png)
 
 ### Built With
 
